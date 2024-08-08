@@ -1,0 +1,467 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.all-sections {
+    display: flex;
+}
+
+.sidebar-section{
+    width: 25%;
+}
+
+.sidebar {
+    width: 280px;
+    height: 100vh;
+}
+
+.sidebar-I {
+    background-color: #121212;
+    width: 100%;
+    height: 130px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.sidebar-I h3 {
+    width: min-content;
+    height: 20px;
+    margin-left: 15px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.icons {
+    color: inherit;
+    font-size: 22px;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+    margin-block-start: 0
+}
+
+ul li {
+    color: #b3b3b3;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+ul li:hover {
+    color: #fff;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-II {
+    margin-top: 10px;
+    background-color: #121212;
+    width: 100%;
+    height: 360px;
+    border-radius: 8px;
+    padding: 5px 20px;
+}
+
+.svg-icon {
+    width: 26px;
+    cursor: pointer;
+}
+
+.sidebar-II h3 {
+    height: 26px;
+    margin-left: 15px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.library-header {
+    fill: #b3b3b3;
+    cursor: pointer;
+    color: #b3b3b3;
+    height: min-content;
+}
+
+.library-header:hover {
+    color: #fff;
+    fill: #fff;
+}
+
+.plus-icon {
+    margin-left: 110px;
+    font-size: 20px;
+    padding: 4px;
+}
+
+.plus-icon:hover {
+    background-color: #383838;
+    border-radius: 50px;
+}
+
+.scroll-area {
+    width: 100%;
+    height: 150px;
+    overflow-y: auto
+}
+
+.scroll-area::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scroll-area::-webkit-scrollbar-track {
+    background: none;
+}
+
+.scroll-area::-webkit-scrollbar-thumb {
+    background: none;
+}
+
+.scroll-area::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+.create-playlist {
+    height: 100px;
+    background-color: #383838;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.find-podcast {
+    height: 115px;
+    background-color: #383838;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.scroll-area h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.scroll-area p {
+    font-weight: 500;
+    font-size: small;
+}
+
+.scroll-area button {
+    background-color: #fff;
+    color: #000;
+    width: max-content;
+    padding: 8px;
+    border: 0;
+    border-radius: 25px;
+    font-weight: 700;
+}
+
+.scroll-area button:hover {
+    padding: 9px;
+}
+
+.sidebar-bottom a {
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 5px;
+    color: #b3b3b3;
+}
+
+.sidebar-bottom a:hover {
+    color: #fff;
+}
+
+.sidebar-bottom button {
+    font-weight: 600;
+    border: .5px solid #fff;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #121212;
+    color: #fff;
+    width: 110px;
+    font-size: medium;
+}
+
+.sidebar-bottom button:hover {
+    border-width: 2px;
+}
+
+.bottom-links {
+    padding-top: 10px;
+}
+
+.main-section {
+    background-color: #121212;
+    width: 75%;
+    height: 90vh;
+
+    border-radius: 8px;
+}
+
+.main-section header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 960px;
+    border-radius: 8px 8px 0 0;
+    background-color: #121212;
+}
+
+.main-section .arrow-icons {
+    margin: 3px;
+    background-color: #383838;
+    border-radius: 50px;
+    width: 20px;
+    padding: 5px;
+    height: 20px;
+    fill: #b3b3b3;
+}
+
+.main-section .arrow-icons:hover {
+    fill: #fff;
+}
+
+.main-section header button {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 0;
+}
+
+.main-section header .signup-btn {
+    background: none;
+    color: #b3b3b3;
+}
+
+.main-section header .signup-btn:hover {
+    color: #fff;
+}
+
+.main-section header .login-btn {
+    border-radius: 25px;
+}
+
+.main-section header .login-btn:hover {
+    font-size: 17px;
+}
+
+.populars {
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 80px;
+    padding: 40px 20px;
+    width: 96%;
+    height: 70vh;
+    border-radius: 0 0 8px 8px;
+    background: linear-gradient(#b3b3b324, #121212);
+}
+
+.populars::-webkit-scrollbar {
+    width: 10px;
+}
+
+.populars::-webkit-scrollbar-track {
+    background: none;
+}
+
+.populars::-webkit-scrollbar-thumb {
+    background: none;
+}
+
+.populars::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+.popular-heading-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-heading-div h5 {
+    margin-top: 20px;
+    color: #b3b3b3;
+}
+
+.popular-heading-div h5:hover {
+    color: #fff;
+}
+
+.popular-artists {
+    width: 100%;
+    height: 300px;
+}
+
+.artists {
+    display: flex;
+}
+
+.artist {
+    position: relative;
+    width: 150px;
+    height: 230px;
+    padding: 5px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
+}
+
+.artist:hover {
+    background-color: #383838;
+}
+
+.artist-img {
+    border-radius: 100px;
+    width: 146px;
+    height: 146px;
+    margin-left: 3px;
+    margin-top: 5px;
+    box-shadow: 4px 4px 10px #00000031;
+}
+
+.artist h3 {
+    font-weight: 500;
+    margin: 2px;
+    font-size: 15px;
+}
+
+.artist p {
+    color: #b3b3b3;
+    margin: 2px;
+}
+
+.artist:hover .play-button {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.play-button {
+    transform: translateY(50%);
+    transition: transform 0.5s ease-out;
+    opacity: 0;
+    position: absolute;
+    z-index: 1000;
+    margin-top: 110px;
+    margin-left: 100px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 50px;
+    background-color: rgb(0, 201, 0);
+    color: #000;
+}
+
+.play-button i {
+    font-size: 20px;
+}
+
+.play-button:hover {
+    background-color: rgb(4, 218, 4);
+    width: 41px;
+    height: 41pxm;
+}
+
+.other-populars {
+    margin-top: 10px;
+    width: 100%;
+    height: 300px;
+}
+
+.popular {
+    display: flex;
+}
+
+.each-populars-div {
+    position: relative;
+    width: 150px;
+    height: 230px;
+    padding: 5px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+}
+
+.each-popular-play-button {
+    transform: translateY(50%);
+    transition: transform 0.5s ease-out;
+    opacity: 0;
+    position: absolute;
+    z-index: 1000;
+    margin-top: 120px;
+    margin-left: 100px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 50px;
+    background-color: rgb(0, 201, 0);
+    color: #000;
+}
+
+.each-populars-div:hover {
+    background-color: #383838;
+}
+
+.popular-img {
+    border-radius: 8px;
+    width: 145px;
+    height: 145px;
+    margin-left: 3px;
+    margin-top: 5px;
+    box-shadow: 4px 4px 10px #00000031;
+    z-index: 10px;
+}
+
+.each-populars-div h3 {
+    font-weight: 500;
+    margin: 2px;
+    font-size: 15px;
+}
+
+.each-populars-div p {
+    color: #b3b3b3;
+    margin: 2px;
+    font-size: 14px;
+}
+
+.each-populars-div:hover .each-popular-play-button {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+footer {
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h4 {
+    margin-bottom: 2px;
+}
+
+footer i {
+    font-size: 16px;
+    margin-top: 14px;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #383838;
+}
+
+footer i:hover {
+    background-color: #888;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #888;
+}
